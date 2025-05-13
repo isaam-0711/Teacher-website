@@ -1,0 +1,259 @@
+body {
+    font-family: open Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(226 232 240);   
+}
+
+/* body contact page  */
+.contact-page { 
+    font-family: open Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(226 232 240);
+    color: black;
+}
+
+.how-page {
+    font-family: open Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(226 232 240);
+    color: black;
+}
+
+
+.buttons {
+    margin-bottom: 10px
+}
+.submit-button {
+    padding: 6px;
+    font-size: medium;
+    margin: 2px;
+    background-color: black;
+    color: white;
+    
+}
+
+.submit-button:hover {
+    background-color:  rgb(59 130 246);
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    position: absolute;
+    margin:0;
+}
+
+nav > .nav-items {
+    text-align: right;
+    width: 82%;
+}
+
+nav > .nav-items > a {
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+nav > .nav-items > a:hover {
+    color: rgb(59 130 246);
+
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.header  {
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Sikrer at pseudo-elementet ikke går utenfor containeren */
+ */
+
+/* .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 2; /* Sørger for at gradienten ligger over bildet */
+ */
+
+.info {
+    text-align: center;
+}
+
+header > .info {
+    padding: 5rem;
+}
+
+header > .info > h1 {
+    margin-bottom: 10px;
+    margin-top: 10rem;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+}
+
+.image-button {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 80%;
+    left: 45%;
+    transform: translateX(-50% -50%);
+    z-index: 10;
+    padding: 10px;
+
+}
+
+#services > .service-title {
+    text-align: center;
+}
+
+
+#services > .cards {
+    display: flex;
+    color: white;
+    margin-top: 5px;
+}
+
+#services > .cards > .card {
+    padding: 6px;
+    flex: 0 0 30%;
+    margin: 1.5%;
+    background-color: rgb(23 37 84);
+    
+}
+
+#services > .cards >.card > .card-image {
+    object-fit: cover;
+    width: 600px;
+    height: 450px;   
+    border: 10px; 
+}
+
+#container-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgb(23 37 84);
+    color: white;
+}
+
+#container-contact > .contact-button {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.contact-page > #contact-image {
+    border-radius: 25px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+footer > .logo-footer > img {
+   border-radius: 25px; 
+   width: 150px;
+   margin-bottom: 1rem;
+
+}
+
+.logo-footer {
+    text-align: left;
+}
+
+.logo-text {
+    max-width: 300px;
+    line-height: 1.6;
+}
+
+.our-services h3 {
+    margin-bottom: 1rem;
+}
+
+.our-services ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.our-services li {
+    margin-bottom: 0.5rem;
+} 
+
+.our-services a {
+    color: rgb(23 37 84);
+    text-decoration: none;
+}
+
+.our-services a:hover{
+    text-decoration: underline; 
+}
+
+
+.footer-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.copyright {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aaaaaa;
+    outline: none;
+    color: white;
+    padding: 10px;
+    border: 10px;
+    margin-top: 10px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack the columns on small screens */
+        text-align: center;
+    }
+
+    .logo-footer, .our-services, .footer-button {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
